@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Likes</title>
+</head>
+<body>
+    <h1>Contador de Likes</h1>
+    <h2 id="qtdCurtidas">Curtidas: 0</h2>
+    <button id="botaoCurtir">Curtir</button>
+
+    <script>
+
+        const quantidadeCurtidas = document.querySelector("#qtdCurtidas");
+        const botaoCurtir = document.querySelector("#botaoCurtir");
+        let curtidas = 0;
+
+        botaoCurtir.addEventListener("click", () => {
+            curtidas++;
+            quantidadeCurtidas.textContent = `Curtidas: ${curtidas}`
+        });
+
+    </script>
+
+</body>
+</html>
